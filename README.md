@@ -64,7 +64,7 @@ We will assign a **catalog_admin** role to the group `Catalog Request Approvers 
 3. Under **Roles**, click **Edit**. <br>
 ![](https://github.com/CodeWithLuwam/June-26-Users-and-Roles/blob/main/Images/Catalog%20Request%20Approvers%20for%20Sale.png?raw=true)
 4. Remove the `catalog` role (view-only).
-5. Add the **catalog_admin** role (gives configuration privileges). in the List  Collector/ Slushbucket<br> ![](https://github.com/CodeWithLuwam/June-26-Users-and-Roles/blob/main/Images/List%20Collector%20Slushbucket.png?raw=true)
+5. Add the **catalog_admin** role (gives configuration privileges). in the **List Collector/ Slushbucket**<br> ![](https://github.com/CodeWithLuwam/June-26-Users-and-Roles/blob/main/Images/List%20Collector%20Slushbucket.png?raw=true)
 6. Click **Save**.
 
 ## Test the Changes
