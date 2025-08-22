@@ -3,15 +3,15 @@
 This guide explains how to create and manage users, assign roles, and configure groups in ServiceNow. It also demonstrates best practices for assigning permissions via groups instead of individual users.
 
 ## Table of Contents
-1. [Overview](#overview)
-2. [Create or View a User](#create-or-view-a-user)
-3. [Understand Roles, Permissions, and Groups](#understand-roles-permissions-and-groups)
-4. [Find and Manage Groups](#find-and-manage-groups)
-5. [Example: Assign Catalog Admin Role to a Group](#example-assign-catalog-admin-role-to-a-group)
-6. [Best Practices](#best-practice)
+0. [Overview](#overview)
+1. [Create or View a User](#create-or-view-a-user)
+2. [Understand Roles, Permissions, and Groups](#understand-roles-permissions-and-groups)
+3. [Find and Manage Groups](#find-and-manage-groups)
+4. [Example: Assign Catalog Admin Role to a Group](#example-assign-catalog-admin-role-to-a-group)
+5. [Best Practices](#best-practice)
 
 <a name="overview"></a> 
-## 1. Overview
+## 0. Overview
 In ServiceNow:
 - **Permissions = Roles**
 - **Roles are collections of permissions** (e.g., create, read, update, delete).
@@ -19,7 +19,7 @@ In ServiceNow:
 - Assigning roles via groups allows for **scalability and easier management**.
 
 <a name="create-or-view-a-user"></a>
-## 2. Create or View a User
+## 1. Create or View a User
 1. Navigate to **All Menu → User Administration → Users**.
 2. Click on **Users**.
 3. To **view an existing user**, click the user record (e.g., *Abel Tuter*).
@@ -35,7 +35,7 @@ In ServiceNow:
   -   Additional roles assigned individually.
 
 <a name="understand-roles-permissions-and-groups"></a>
-## 3. Understand Roles, Permissions, and Groups
+## 2. Understand Roles, Permissions, and Groups
 - **Roles** = Define what actions (create, read, update, delete) and what data or applications the user can access.
 - **Groups** = Logical collections of users that share similar responsibilities.
 - Roles can be:
@@ -44,7 +44,7 @@ In ServiceNow:
 >Best Practice: Assign roles via groups for easier scalability and centralized management.
 
 <a name="find-and-manage-groups"></a>
-## 4. Find and Manage Groups
+## 3. Find and Manage Groups
 1. Navigate to **All Menu → User Administration → Groups**.
 2. Search for a specific group (e.g., `Service Desk`).
 3. Click the group record to view:
@@ -56,14 +56,15 @@ In ServiceNow:
 >Even if a group has only 2 roles, an individual user may have more roles from other groups or direct assignments.
 
 <a name="example-assign-catalog-admin-role-to-a-group"></a>
-## 5. Example: Assign Catalog Admin Role to a Group
-We will assign a catalog_admin role to the group `Catalog Request Approvers for Sales`.
+## 4. Example: Assign Catalog Admin Role to a Group
+We will assign a **catalog_admin** role to the group `Catalog Request Approvers for Sales`.
 ### Steps:
 1. Go to **All Menu → Groups**.
 2. Search for **Catalog Request Approvers for Sales** and open the record.
-3. Under **Roles**, click **Edit**.
+3. Under **Roles**, click **Edit**. <br>
+![](https://github.com/CodeWithLuwam/June-26-Users-and-Roles/blob/main/Images/Catalog%20Request%20Approvers%20for%20Sale.png?raw=true)
 4. Remove the `catalog` role (view-only).
-5. Add the **catalog_admin** role (gives configuration privileges).
+5. Add the **catalog_admin** role (gives configuration privileges). in the List  Collector/ Slushbucket<br> ![](https://github.com/CodeWithLuwam/June-26-Users-and-Roles/blob/main/Images/List%20Collector%20Slushbucket.png?raw=true)
 6. Click **Save**.
 
 ## Test the Changes
@@ -72,7 +73,7 @@ We will assign a catalog_admin role to the group `Catalog Request Approvers for 
 3. Confirm that the user can now **edit catalog items**.
 
 <a name="best-practice"></a>
-## 6. Best Practices
+## 5. Best Practices
 - Use **least privilege** principle: Assign only the roles needed for the job.
 - Prefer **group-based role assignments** over individual role assignments.
 - Review roles and groups periodically for security and compliance.
