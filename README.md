@@ -27,7 +27,9 @@ In ServiceNow:
 
 ### User Record Details
 - The **Groups** tab shows which groups the user belongs to.
+  ![](https://github.com/CodeWithLuwam/June-26-Users-and-Roles/blob/main/Images/Groubs%20tab-%20Which%20Group%20User%20Belongs%20To.png?raw=true)
 - The **Roles** tab shows roles assigned directly to the user.
+  ![](https://github.com/CodeWithLuwam/June-26-Users-and-Roles/blob/main/Images/Roles%20tab-%20Roles%20Assigned%20Directly%20to%20User.png?raw=true)
 - Users can have roles from:
   -   Their groups
   -   Additional roles assigned individually.
